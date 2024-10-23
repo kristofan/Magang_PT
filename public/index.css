@@ -1,0 +1,100 @@
+/* Font styling */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+ body {
+    background: linear-gradient(to bottom right, #e8c5b4, #f7f0e7); /* Gradasi warna latar belakang */
+    font-family: 'Georgia', serif;
+    color: #333; /* Warna teks utama */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Mengisi layar penuh */
+}
+
+
+/* Styling for the heading */
+h1 {
+  font-size: 36px;
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+}
+
+/* User list container */
+.users-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 700px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* User item styling */
+.user-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom: 1px solid #eeeeee;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Last item without border */
+.user-item:last-child {
+  border-bottom: none;
+}
+
+/* Hover effect for user items */
+.user-item:hover {
+  background-color: #f0f4f8;
+  transform: scale(1.02);
+}
+
+/* User info styling */
+.user-info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+/* User name styling */
+.user-name {
+  font-size: 20px;
+  font-weight: 600;
+  color: #34495e;
+}
+
+/* User email styling */
+.user-email {
+  font-size: 16px;
+  color: #7f8c8d;
+  text-align: right;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .user-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .user-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .user-name {
+    font-size: 18px;
+  }
+
+  .user-email {
+    font-size: 14px;
+    margin-top: 5px;
+  }
+}

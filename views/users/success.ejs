@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Success</title>
+    <style>
+        body {
+    background: linear-gradient(to bottom right, #e8c5b4, #f7f0e7); /* Gradasi warna latar belakang */
+    font-family: 'Georgia', serif;
+    color: #333; /* Warna teks utama */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Mengisi layar penuh */
+}
+
+        .container {
+            background-color: white;
+            border: 2px solid #4caf50;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+        }
+        .container h2 {
+            color: #4caf50;
+            margin-bottom: 20px;
+        }
+        .container p {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+        .container p strong {
+            color: #388e3c;
+            width: 70%;
+        }
+        .btn {
+            background-color: #4caf50;
+            border: none;
+            color: white;
+            padding: 12px 20px;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+            width: 50%;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .btn:hover {
+            background-color: #388e3c;
+        }
+        .payment-success {
+    background: linear-gradient(135deg, #e91e63, #ff4081);
+    padding: 30px; 
+    border-radius: 15px; 
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); 
+    color: white; 
+    max-width: 500px; 
+    margin: 50px auto; 
+}
+
+.payment-success h2 {
+    font-size: 30px;
+    font-weight: 700; 
+    margin-bottom: 20px; 
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+    color: #ffffff; 
+}
+
+.payment-success p {
+    font-size: 18px; 
+    margin-bottom: 30px; 
+    color: #f5f5f5; 
+}
+
+.payment-success .btn {
+    display: inline-block; 
+    background: #ffffff; 
+    color: #e91e63; 
+    padding: 12px 25px; 
+    border-radius: 50px; 
+    font-size: 16px; 
+    font-weight: 600; 
+    text-transform: uppercase; 
+    text-decoration: none;
+    transition: background 0.3s ease, color 0.3s ease; 
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); 
+}
+
+.payment-success .btn:hover {
+    background: #e91e63;
+    color: white; 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); 
+}
+
+    </style>
+</head>
+<body>
+    <div class="container payment-success">
+        <h2>Payment Successful</h2>
+        <p>Thank you for your payment!</p>
+        <a href="/dashboard" class="btn">Back to Home</a>
+    </div>
+    
+</body>
+</html>

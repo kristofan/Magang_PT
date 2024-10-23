@@ -1,0 +1,101 @@
+   body {
+    background-image: url('/img/good.jpeg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; 
+    font-family: 'Georgia', serif;
+}
+
+
+.container {
+    max-width: 800px; /* Lebar maksimal kontainer */
+    background: #fff7e6; /* Gradasi warna pink lembut dan ungu pastel */
+    padding: 30px; /* Ruang di dalam kontainer */
+    border-radius: 20px; /* Membulatkan sudut */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2), 0 4px 20px rgba(0, 0, 0, 0.19); /* Bayangan 3D */
+    position: relative; /* Mengatur posisi relatif untuk efek 3D */
+    overflow: hidden; /* Menghilangkan bagian yang melebihi kontainer */
+}
+
+
+.card-header {
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: rgb(255 49 49 / 24%);
+    border-bottom: 1px solid rgba(0, 0, 0, .125);
+}
+
+
+h2 {
+    text-align: center; /* Mengatur judul agar berada di tengah */
+    color: #d3a85b; /* Warna emas untuk judul */
+    margin-bottom: 30px; /* Margin bawah */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Bayangan teks untuk efek kedalaman */
+}
+
+.form-group {
+    margin-bottom: 20px; /* Jarak antara elemen form */
+}
+
+label {
+    display: block; /* Menampilkan label sebagai blok */
+    margin-bottom: 5px; /* Jarak bawah label */
+    font-weight: bold; /* Menebalkan teks label */
+    color: #555; /* Warna label */
+}
+
+input[type="text"],
+input[type="date"],
+textarea {
+    width: 100%; /* Lebar 100% untuk input dan textarea */
+    padding: 12px; /* Ruang dalam input */
+    border: 1px solid #ccc; /* Garis batas abu-abu */
+    border-radius: 5px; /* Membulatkan sudut */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Transisi untuk perubahan warna */
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1); /* Bayangan inset untuk efek kedalaman */
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+textarea:focus {
+    border-color: #d3a85b; /* Warna batas saat fokus */
+    outline: none; /* Menghilangkan outline default */
+    box-shadow: 0 0 10px rgba(211, 168, 91, 0.5); /* Bayangan saat fokus untuk efek 3D */
+}
+
+textarea {
+    height: 100px; /* Tinggi textarea */
+}
+
+.btn {
+    background-color: #d3a85b; /* Warna tombol */
+    color: #fff; /* Warna teks tombol */
+    padding: 12px 20px; /* Ruang dalam tombol */
+    border: none; /* Menghilangkan garis batas */
+    border-radius: 5px; /* Membulatkan sudut tombol */
+    cursor: pointer; /* Mengubah kursor saat hover */
+    transition: background-color 0.3s, transform 0.3s; /* Transisi untuk hover */
+    display: block; /* Memastikan tombol berada di bawah input */
+    width: 100%; /* Lebar tombol 100% */
+}
+
+.btn:hover {
+    background-color: #b08944; /* Warna saat hover */
+    transform: translateY(-3px); /* Efek angkat saat hover */
+}
+
+.cerita-nikah {
+    margin-top: 30px; /* Jarak atas untuk bagian cerita nikah */
+    border-top: 2px solid #d3a85b; /* Garis pemisah di atas */
+    padding-top: 20px; /* Ruang atas untuk bagian cerita nikah */
+}
+
+.Cerita {
+    font-size: 18px; /* Ukuran font untuk judul cerita */
+    color: #d3a85b; /* Warna emas untuk judul cerita */
+    margin-bottom: 15px; /* Jarak bawah */
+}
+
+.mt-5, .my-5 {
+    margin-top: 0px;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: #f4f4f4;
+            font-family: 'Arial', sans-serif;
+        }
+        .wrapper {
+            display: flex;
+            width: 100%;
+        }
+        .sidebar {
+            width: 250px;
+            height: 100vh;
+            background: #343a40;
+            color: white;
+            position: fixed;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            padding: 15px;
+            text-align: center;
+        }
+        .sidebar ul li a {
+            color: white;
+            text-decoration: none;
+            display: block;
+        }
+        .sidebar ul li a:hover {
+            background: #495057;
+        }
+        .main-content {
+            margin-left: 250px;
+            padding: 20px;
+            width: calc(100% - 250px);
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="sidebar">
+            <h2 class="text-center py-4">Admin Dashboard</h2>
+            <ul>
+                <li><a href="/admin/users">Users</a></li>
+                <li><a href="/admin/orders">Orders</a></li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <h2>Data Pesanan</h2>
+            <div class="table-responsive">
+                <table class="table table-bordered table-hover">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>ID Pesanan</th>
+                            <th>Nama Pemesan</th>
+                            <th>Nama Mempelai Pria</th>
+                            <th>Nama Mempelai Wanita</th>
+                            <th>Tanggal Akad</th>
+                            <th>Tanggal Resepsi</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% orders.forEach(function(order) { %>
+                        <tr>
+                            <td><%= order.id %></td>
+                            <td><%= order.Nama_Pemesan %></td>
+                            <td><%= order.Nama_Mempelai_Pria %></td>
+                            <td><%= order.Nama_Mempelai_Wanita %></td>
+                            <td><%= order.formattedTanggalAkad %></td>
+                            <td><%= order.formattedTanggalResepsi %></td>
+                            <td><%= order.status %></td>
+                        </tr>
+                        <% }); %>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <script type="text/javascript"
+        src="https://app.sandbox.midtrans.com/snap/snap.js"
+        data-client-key="SB-Mid-client-encxuRse_9xk0GUh"></script>
+   <link rel="stylesheet" type="text/css" href="payment.css">
+    <script type="text/javascript">
+      function pay() {
+        snap.pay('<%= transactionToken %>', {
+    onSuccess: function(result) {
+        const id = '<%= pesanan.id %>';  
+        window.location.href = `/announcement?id=${id}`;
+    },
+    onPending: function(result) {
+        console.log('pending', result);
+    },
+    onError: function(result) {
+        console.log('error', result);
+    },
+    onClose: function() {
+        console.log('customer closed the popup without finishing the payment');
+    }
+});
+}
+
+    </script>
+</head>
+<body>
+    <div class="container wedding-theme">
+        <h2>Order Information</h2>
+        <div class="order-info">
+            
+            <p class="date-info"><strong>Name:</strong> <span class="date-value"><%= pesanan.Nama_Pemesan %></span></p>
+            <p class="date-info"><strong>Order ID:</strong> <span><%= pesanan.id %></span></p>
+            <p class="date-info"><strong>Code undangan: </strong> <span><%= pesanan.Code %></span></p>
+            <p class="date-info">
+                <strong>Date:</strong>
+                <span><%= pesanan.createdAt %></span>
+            </p>
+            <p class="date-info"><strong>Total: </strong> <span><%= pesanan.harga %></span></p>
+        </div>
+    
+        <button class="pay-btn" onClick="pay()">Pay Now</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,173 @@
+  body {
+    background: linear-gradient(to bottom right, #e8c5b4, #f7f0e7);
+    font-family: 'Georgia', serif;
+}
+
+h1, h2 {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+h1 {
+    color: #4CAF50; 
+    font-size: 1.5rem; 
+    margin-bottom: 0px; 
+}
+
+h2 {
+    color: #4CAF50; 
+    font-size: 1.75rem; 
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 18px; 
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px; 
+}
+
+strong {
+    color: #333;
+}
+
+
+.announcement {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px; 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2), 0 4px 10px rgba(0, 0, 0, 0.19); 
+    margin-top: 20px; 
+   
+}
+
+.announcement:hover {
+   
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3), 0 6px 15px rgba(0, 0, 0, 0.25); 
+}
+
+
+.announcement p {
+    color: #555; 
+}
+
+h2 {
+    color: #4CAF50; 
+    font-size: 2rem;
+    text-align: center; 
+    margin-bottom: 20px; 
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+    background-color: #fff7e6; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px; 
+    max-width: 600px; 
+    margin: 0 auto; 
+}
+
+li {
+    margin-bottom: 15px; 
+    padding: 0px; 
+    border-bottom: 1px solid #eee; 
+}
+
+li:last-child {
+    border-bottom: none; 
+}
+
+strong {
+    color: #ee2b66; 
+}
+
+span {
+    color: #555;
+}
+@keyframes fadeInUp {
+    0% {
+        opacity: 0; 
+        transform: translateY(20px); 
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); 
+    }
+}
+
+.success-message {
+    font-size: 24px; 
+    color: #d30d69;
+    text-align: center; 
+    animation: fadeInUp 1s ease-in-out; 
+}
+.container.wedding-theme {
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    padding: 11px;
+    background: #fff; 
+    border-radius: 15px; 
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s; 
+}
+
+.container.wedding-theme:hover {
+    
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2); 
+}
+
+.date-info {
+    display: flex; 
+    align-items: center; 
+    background: #fff; 
+    border: 1px solid #e91e63; 
+    border-radius: 10px; 
+    padding: 10px 15px;
+    margin: 10px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s; 
+}
+
+
+
+.date-value {
+    font-size: 20px; 
+    color: #e703ae;
+    padding-left: 10px; 
+    font-weight: bold; 
+}
+.order-info h2 {
+    color: #e91e63;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.thank-you-message {
+    margin-top: 20px;
+    font-size: 18px; 
+    color: #333; 
+    background: #fff7e6;
+    padding: 20px; 
+    border-radius: 10px; 
+    color: black; 
+    text-align: center; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: transform 0.3s ease, background 0.3s ease; 
+}
+
+.thank-you-message:hover {
+    background: linear-gradient(135deg, #d81b60, #f06292); 
+    transform: scale(1.02);
+}

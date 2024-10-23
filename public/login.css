@@ -1,0 +1,72 @@
+body {
+    background-image: url('/img/background.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    font-family: 'Georgia', serif;
+}
+.card {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05); 
+}
+
+.card-header h3 {
+  text-align: center;
+  color: #d3a85b; 
+  font-size: 24px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  color: #8a6343; 
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.form-control {
+  border-radius: 10px;
+  padding: 10px 15px;
+  border: 2px solid #d3a85b;
+}
+
+.form-control:focus {
+  border-color: #b08944;
+  box-shadow: none;
+}
+
+.btn-primary {
+  background-color: #d3a85b;
+  border: none;
+  border-radius: 25px;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #b08944; 
+}
+
+.card-footer p {
+  color: #8a6343;
+}
+
+.card-footer a {
+  color: #d3a85b;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.card-footer a:hover {
+  text-decoration: underline;
+}
